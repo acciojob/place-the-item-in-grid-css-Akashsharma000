@@ -1,18 +1,15 @@
 .holder {
     display: grid;
-    width: 200px;
-    height: 200px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
-    border: 2px solid #333;
-  }
-  .holder > div {
-    background-color: #4a90e2;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
+    grid-template-columns: repeat(2, 100px); /* Two columns of 100px each */
+    grid-template-rows: repeat(2, 100px);    /* Two rows of 100px each */
+}
+
+.holder > div {
+    background-color: #4a90e2; /* Background color for grid items */
+    color: white;              /* Text color */
+    display: flex;             /* Flexbox for centering content */
+    align-items: center;       /* Center items vertically */
+    justify-content: center;    /* Center items horizontally */
+    font-family: Arial, sans-serif; /* Font style */
+    font-size: 16px;          /* Font size */
+}
