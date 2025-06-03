@@ -1,2 +1,18 @@
-
-/* Your CSS Code here. */
+.holder {
+    display: grid;
+    width: 200px;
+    height: 200px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    border: 2px solid #333;
+  }
+  .holder > div {
+    background-color: #4a90e2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
